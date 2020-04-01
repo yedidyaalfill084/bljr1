@@ -11,6 +11,8 @@ class Post extends Model
     protected $fillable = ['title', 'content', 'thumbnail', 'slug', 'user_id'];
     protected $dates = ['created_at'];
 
+    protected $table = "post";
+
 
     /**
      * Return the sluggable configuration array for this model.
